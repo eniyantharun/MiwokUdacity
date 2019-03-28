@@ -18,8 +18,11 @@ package com.example.android.miwok;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,8 +31,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ArrayList<String> words = new ArrayList<String>();
+        words.add("one");
+        words.add("two");
+        words.add("three");
+        words.add("four");
+        words.add("five0");
+        words.add("six");
+        words.add("seven");
+        words.add("eight");
+        words.add("nine");
+        words.add("ten");
 
-        String[] words = new String[10];
+        for(int i = 0; i == words.size(); i++){
+            Log.v("NumbersActivity","words at index "+i+" : "+ words.get(i));
+        }
+
+        /*String[] words = new String[10];
         words[0]="one";
         words[1]="two";
         words[2]="three";
@@ -39,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         words[6]="seven";
         words[7]="eight";
         words[8]="nine";
-        words[9]="ten";
+        words[9]="ten";*/
 
         TextView numbers = findViewById(R.id.numbers);
         numbers.setOnClickListener(new View.OnClickListener() {
