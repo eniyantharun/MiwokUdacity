@@ -21,6 +21,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -36,16 +37,12 @@ public class MainActivity extends AppCompatActivity {
         words.add("two");
         words.add("three");
         words.add("four");
-        words.add("five0");
+        words.add("five");
         words.add("six");
         words.add("seven");
         words.add("eight");
         words.add("nine");
         words.add("ten");
-
-        for(int i = 0; i == words.size(); i++){
-            Log.v("NumbersActivity","words at index "+i+" : "+ words.get(i));
-        }
 
         /*String[] words = new String[10];
         words[0]="one";
