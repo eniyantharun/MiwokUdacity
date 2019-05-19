@@ -16,13 +16,11 @@ import androidx.annotation.NonNull;
 public class CustomAdapter extends ArrayAdapter<ModelClass> {
     private int mColorResourceId;
 
-
     public CustomAdapter(@NonNull Context context, int resource, ArrayList<ModelClass> words, int ColorResourceId) {
         super(context, resource, words);
         mColorResourceId = ColorResourceId;
     }
 
-    @androidx.annotation.NonNull
     @Override
     public View getView(int position, @androidx.annotation.Nullable View convertView, @androidx.annotation.NonNull ViewGroup parent) {
         View listItemView = convertView;
